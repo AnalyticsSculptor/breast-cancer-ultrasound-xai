@@ -6,7 +6,7 @@ import numpy as np
 import gradio as gr
 from PIL import Image
 
-# Add project root to path so we can import our modules
+
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from src.models.classifier import BreastCancerClassifier
@@ -19,7 +19,7 @@ CHECKPOINT_PATH = "outputs/checkpoints/model_best.pth" # Update this to your act
 IMAGE_SIZE = 224
 
 # Load Model
-model = BreastCancerClassifier(pretrained=False) # No need to download pretrained weights for inference
+model = BreastCancerClassifier(pretrained=False) 
 # Uncomment the line below once you have a trained checkpoint!
 # model.load_state_dict(torch.load(CHECKPOINT_PATH, map_location=DEVICE)) 
 model.to(DEVICE)
