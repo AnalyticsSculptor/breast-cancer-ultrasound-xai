@@ -1,0 +1,31 @@
+# ── Core 
+torch>=2.1.0
+torchvision>=0.16.0
+timm>=0.9.12
+
+# ── Data & Augmentation 
+albumentations>=1.3.1
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# ── Training Utilities
+tqdm>=4.66.0
+PyYAML>=6.0
+omegaconf>=2.3.0
+
+# ── Experiment Tracking 
+mlflow>=2.9.0
+
+# ── Explainability 
+grad-cam>=1.4.8
+
+# ── Evaluation & Visualisation 
+matplotlib>=3.7.0
+seaborn>=0.13.0
+plotly>=5.18.0
+
+# ── Deployment 
+gradio>=4.7.0

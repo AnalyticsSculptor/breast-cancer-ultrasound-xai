@@ -1,0 +1,19 @@
+# config.yaml
+data:
+  raw_dir: "data/raw"
+  image_size: 224
+  batch_size: 32
+  num_workers: 4
+  splits: [0.7, 0.15, 0.15] # Train / Val / Test
+
+model:
+  backbone: "tf_efficientnet_b4.ns_jft_in1k"
+  pretrained: true
+  dropout_rate: 0.3
+  num_classes: 2
+
+training:
+  epochs: 30
+  freeze_epochs: 3
+  learning_rate: 0.0001   # Changed from 1e-4
+  weight_decay: 0.01
